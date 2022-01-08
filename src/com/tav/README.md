@@ -43,3 +43,10 @@ Long placeOrder(long id, Order order)
 ** findUserOrder will return a full User inside it with the password as null (You will need to use a JOIN statement for this method)
 
 ** After defining all the classes, you can use the DatabaseTester that is written in the answers (You might have to make small adjustments)
+
+---------------------------
+# Dependencies:
+
+- mysql-connector-java
+- lombok
+
