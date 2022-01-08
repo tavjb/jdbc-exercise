@@ -88,7 +88,7 @@ public class DatabaseTester {
 
         for (int i = 0; i < productNames.length; i++) {
             UserDAL.instance.placeOrder(
-                    UserDAL.instance.read((long) i + 1),
+                    UserDAL.instance.read((long) i + 1).getId(),
                     new Order(prices[i], productNames[i], null)
             );
         }

@@ -125,13 +125,13 @@ public class UserDAL implements CrudDAL<Long, User>{
         }
     }
 
-    public Long placeOrder(User user, Order order) {
+    public Long placeOrder(long id, Order order) {
         try {
             String query = "INSERT INTO exercise_db_1.order (price, product_name, purchased_by) VALUES (?, ?, ?)";
             PreparedStatement preparedStatement = connection.prepareStatement(query, Statement.RETURN_GENERATED_KEYS);
             preparedStatement.setFloat(1, order.getPrice());
             preparedStatement.setString(2, order.getProductName());
-            preparedStatement.setLong(3, user.getId());
+            preparedStatement.setLong(3, id);
             preparedStatement.executeUpdate();
             ResultSet generatedKeysResult = preparedStatement.getGeneratedKeys();
 
