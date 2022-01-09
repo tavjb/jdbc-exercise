@@ -1,7 +1,7 @@
 # JDBC Advanced exercise
 
 Create the following database:
-##schema:
+## schema:
 - db_exercise_1
 ## tables:
 - user
