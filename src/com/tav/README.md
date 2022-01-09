@@ -33,7 +33,7 @@ String productName;
 User buyer;
 ```
 
-Also, define a UserDAL and an OrderDAL with full crud functionality (create, read, update, delete)
+Also, define a UserDAL with full crud functionality (create, read, update, delete)
 and also add two additional methods to UserDAL:
 ```
 Order findUserOrder(Long id)
